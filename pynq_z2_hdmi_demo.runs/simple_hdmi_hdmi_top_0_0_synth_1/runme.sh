@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/njordan/Development/fpga/simple_hdmi/simple_hdmi.runs/simple_hdmi_hdmi_top_0_0_synth_1'
+HD_PWD='/home/njordan/Development/fpga/pynq_z2_hdmi_demo/pynq_z2_hdmi_demo.runs/simple_hdmi_hdmi_top_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

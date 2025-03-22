@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/njordan/Development/fpga/simple_hdmi/simple_hdmi.runs/impl_1/simple_hdmi_wrapper.tcl"
+  variable script "/home/njordan/Development/fpga/pynq_z2_hdmi_demo/pynq_z2_hdmi_demo.runs/impl_1/simple_hdmi_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,7 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -107,11 +106,9 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
-  set_param bd.open.in_stealth_mode 7
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint simple_hdmi_wrapper_routed.dcp
-  set_property webtalk.parent_dir /home/njordan/Development/fpga/simple_hdmi/simple_hdmi.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/njordan/Development/fpga/pynq_z2_hdmi_demo/pynq_z2_hdmi_demo.cache/wt [current_project]
 set_property TOP simple_hdmi_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

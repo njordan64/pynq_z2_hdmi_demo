@@ -42,9 +42,12 @@ localparam WAVE_RATE = 480;
 reg [AUDIO_BIT_WIDTH-1:0] audio_sample_word;
 reg [AUDIO_BIT_WIDTH-1:0] audio_sample_word_dampened;
 
+always @(posedge clk_audio) begin
+    audio_sample_word <= audio_sample_word + 327;
+end
 //sawtooth #(.BIT_WIDTH(AUDIO_BIT_WIDTH), .SAMPLE_RATE(AUDIO_RATE), .WAVE_RATE(WAVE_RATE)) sawtooth (.clk_audio(clk_audio), .level(audio_sample_word));
 
-reg [23:0] rgb = 24'h0000b0;
+reg [23:0] rgb = 24'h000000;
 wire [10:0] cx;
 wire [9:0] cy;
 wire [2:0] tmds;
@@ -84,7 +87,9 @@ begin
         if (vid_tvalid && cx == 0 && cy == 0) begin
             tready <= 1;
             state <= 1;
-            rgb <= vid_tdata;
+            rgb[23:16] <= vid_tdata[7:0];
+            rgb[15:8] <= vid_tdata[15:8];
+            rgb[7:0] <= vid_tdata[23:16];
         end else begin
             rgb <= 24'h000000;
         end
@@ -93,13 +98,19 @@ begin
             if (cx == 1280 && cy < 719) begin
                 state <= 2;
                 tready <= 0;
-                rgb <= vid_tdata;
+                rgb[23:16] <= vid_tdata[7:0];
+                rgb[15:8] <= vid_tdata[15:8];
+                rgb[7:0] <= vid_tdata[23:16];
             end else if (cx == 1280 && cy == 719) begin
                 state <= 0;
                 tready <= 0;
-                rgb <= vid_tdata;
+                rgb[23:16] <= vid_tdata[7:0];
+                rgb[15:8] <= vid_tdata[15:8];
+                rgb[7:0] <= vid_tdata[23:16];
             end else begin
-                rgb <= vid_tdata;
+                rgb[23:16] <= vid_tdata[7:0];
+                rgb[15:8] <= vid_tdata[15:8];
+                rgb[7:0] <= vid_tdata[23:16];
             end
         end else begin
             rgb <= 24'h000000;
@@ -109,7 +120,9 @@ begin
             if (cx == 0) begin
                 state <= 1;
                 tready <= 1;
-                rgb <= vid_tdata;
+                rgb[23:16] <= vid_tdata[7:0];
+                rgb[15:8] <= vid_tdata[15:8];
+                rgb[7:0] <= vid_tdata[23:16];
             end else begin
                 rgb <= 24'h000000;
             end

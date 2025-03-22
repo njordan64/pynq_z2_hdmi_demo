@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
--- Date        : Fri Mar 21 23:38:27 2025
+-- Date        : Sat Mar 22 16:38:12 2025
 -- Host        : gtr running 64-bit Ubuntu 24.10
 -- Command     : write_vhdl -force -mode funcsim
---               /home/njordan/Development/fpga/simple_hdmi/simple_hdmi.gen/sources_1/bd/simple_hdmi/ip/simple_hdmi_hdmi_top_0_0/simple_hdmi_hdmi_top_0_0_sim_netlist.vhdl
+--               /home/njordan/Development/fpga/pynq_z2_hdmi_demo/pynq_z2_hdmi_demo.gen/sources_1/bd/simple_hdmi/ip/simple_hdmi_hdmi_top_0_0/simple_hdmi_hdmi_top_0_0_sim_netlist.vhdl
 -- Design      : simple_hdmi_hdmi_top_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -10577,7 +10577,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(0),
+      D => vid_tdata(16),
       Q => \rgb_reg_n_0_[0]\,
       R => hdmi_n_3
     );
@@ -10654,7 +10654,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(16),
+      D => vid_tdata(0),
       Q => \rgb_reg_n_0_[16]\,
       R => hdmi_n_3
     );
@@ -10665,7 +10665,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(17),
+      D => vid_tdata(1),
       Q => \rgb_reg_n_0_[17]\,
       R => hdmi_n_3
     );
@@ -10676,7 +10676,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(18),
+      D => vid_tdata(2),
       Q => \rgb_reg_n_0_[18]\,
       R => hdmi_n_3
     );
@@ -10687,7 +10687,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(19),
+      D => vid_tdata(3),
       Q => \rgb_reg_n_0_[19]\,
       R => hdmi_n_3
     );
@@ -10698,7 +10698,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(1),
+      D => vid_tdata(17),
       Q => \rgb_reg_n_0_[1]\,
       R => hdmi_n_3
     );
@@ -10709,7 +10709,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(20),
+      D => vid_tdata(4),
       Q => \rgb_reg_n_0_[20]\,
       R => hdmi_n_3
     );
@@ -10720,7 +10720,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(21),
+      D => vid_tdata(5),
       Q => \rgb_reg_n_0_[21]\,
       R => hdmi_n_3
     );
@@ -10731,7 +10731,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(22),
+      D => vid_tdata(6),
       Q => \rgb_reg_n_0_[22]\,
       R => hdmi_n_3
     );
@@ -10742,7 +10742,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(23),
+      D => vid_tdata(7),
       Q => \rgb_reg_n_0_[23]\,
       R => hdmi_n_3
     );
@@ -10753,7 +10753,7 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(2),
+      D => vid_tdata(18),
       Q => \rgb_reg_n_0_[2]\,
       R => hdmi_n_3
     );
@@ -10764,29 +10764,29 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(3),
+      D => vid_tdata(19),
       Q => \rgb_reg_n_0_[3]\,
       R => hdmi_n_3
     );
 \rgb_reg[4]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(4),
+      D => vid_tdata(20),
       Q => \rgb_reg_n_0_[4]\,
       R => hdmi_n_3
     );
 \rgb_reg[5]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(5),
+      D => vid_tdata(21),
       Q => \rgb_reg_n_0_[5]\,
       R => hdmi_n_3
     );
@@ -10797,18 +10797,18 @@ obufds_clock: unisim.vcomponents.OBUFDS
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(6),
+      D => vid_tdata(22),
       Q => \rgb_reg_n_0_[6]\,
       R => hdmi_n_3
     );
 \rgb_reg[7]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
         port map (
       C => \^clk_out1\,
       CE => \rgb[23]_i_2_n_0\,
-      D => vid_tdata(7),
+      D => vid_tdata(23),
       Q => \rgb_reg_n_0_[7]\,
       R => hdmi_n_3
     );

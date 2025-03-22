@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date             : Fri Mar 21 23:40:59 2025
+| Date             : Sat Mar 22 16:41:14 2025
 | Host             : gtr running 64-bit Ubuntu 24.10
 | Command          : report_power -file simple_hdmi_wrapper_power_routed.rpt -pb simple_hdmi_wrapper_power_summary_routed.pb -rpx simple_hdmi_wrapper_power_routed.rpx
 | Design           : simple_hdmi_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.709        |
+| Total On-Chip Power (W)  | 1.710        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.564        |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.029 |        6 |       --- |             --- |
-| Slice Logic              |     0.013 |    20180 |       --- |             --- |
-|   LUT as Logic           |     0.012 |     6315 |     53200 |           11.87 |
-|   Register               |    <0.001 |     8973 |    106400 |            8.43 |
+| Slice Logic              |     0.013 |    20177 |       --- |             --- |
+|   LUT as Logic           |     0.012 |     6310 |     53200 |           11.86 |
+|   Register               |    <0.001 |     8971 |    106400 |            8.43 |
 |   LUT as Distributed RAM |    <0.001 |      802 |     17400 |            4.61 |
 |   CARRY4                 |    <0.001 |       98 |     13300 |            0.74 |
 |   LUT as Shift Register  |    <0.001 |      409 |     17400 |            2.35 |
 |   F7/F8 Muxes            |    <0.001 |       14 |     53200 |            0.03 |
 |   Others                 |     0.000 |      886 |       --- |             --- |
-| Signals                  |     0.014 |    13140 |       --- |             --- |
+| Signals                  |     0.015 |    13125 |       --- |             --- |
 | Block RAM                |    <0.001 |      2.5 |       140 |            1.79 |
 | MMCM                     |     0.105 |        1 |         4 |           25.00 |
 | I/O                      |     0.140 |       18 |       125 |           14.40 |

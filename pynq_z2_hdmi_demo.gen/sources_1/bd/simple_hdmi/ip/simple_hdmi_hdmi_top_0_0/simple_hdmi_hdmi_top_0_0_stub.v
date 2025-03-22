@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-// Date        : Fri Mar 21 23:38:27 2025
+// Date        : Sat Mar 22 16:38:12 2025
 // Host        : gtr running 64-bit Ubuntu 24.10
 // Command     : write_verilog -force -mode synth_stub
-//               /home/njordan/Development/fpga/simple_hdmi/simple_hdmi.gen/sources_1/bd/simple_hdmi/ip/simple_hdmi_hdmi_top_0_0/simple_hdmi_hdmi_top_0_0_stub.v
+//               /home/njordan/Development/fpga/pynq_z2_hdmi_demo/pynq_z2_hdmi_demo.gen/sources_1/bd/simple_hdmi/ip/simple_hdmi_hdmi_top_0_0/simple_hdmi_hdmi_top_0_0_stub.v
 // Design      : simple_hdmi_hdmi_top_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

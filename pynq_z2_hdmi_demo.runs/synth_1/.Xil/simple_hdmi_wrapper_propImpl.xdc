@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/njordan/Development/fpga/simple_hdmi/simple_hdmi.srcs/constrs_1/new/constraints.xdc rfile:../../../simple_hdmi.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/njordan/Development/fpga/pynq_z2_hdmi_demo/pynq_z2_hdmi_demo.srcs/constrs_1/new/constraints.xdc rfile:../../../pynq_z2_hdmi_demo.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports {sws_2bits_tri_i[0]}]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

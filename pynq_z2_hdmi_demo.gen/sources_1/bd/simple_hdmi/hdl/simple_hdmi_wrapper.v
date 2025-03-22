@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Fri Mar 21 23:37:47 2025
+//Date        : Sat Mar 22 16:37:35 2025
 //Host        : gtr running 64-bit Ubuntu 24.10
 //Command     : generate_target simple_hdmi_wrapper.bd
 //Design      : simple_hdmi_wrapper

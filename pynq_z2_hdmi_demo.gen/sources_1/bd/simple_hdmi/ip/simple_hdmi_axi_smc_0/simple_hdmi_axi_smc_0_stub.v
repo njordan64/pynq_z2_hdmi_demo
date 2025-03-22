@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-// Date        : Sat Mar 15 16:39:20 2025
+// Date        : Sat Mar 22 16:14:59 2025
 // Host        : gtr running 64-bit Ubuntu 24.10
 // Command     : write_verilog -force -mode synth_stub -rename_top simple_hdmi_axi_smc_0 -prefix
 //               simple_hdmi_axi_smc_0_ simple_hdmi_axi_smc_0_stub.v

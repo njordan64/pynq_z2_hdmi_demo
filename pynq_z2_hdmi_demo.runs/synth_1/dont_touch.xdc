@@ -24,4 +24,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==simple_hdmi
 # IP: bd/simple_hdmi/ip/simple_hdmi_axi_intc_0_0/simple_hdmi_axi_intc_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==simple_hdmi_axi_intc_0_0 || ORIG_REF_NAME==simple_hdmi_axi_intc_0_0} -quiet] -quiet
 
-# XDC: /home/njordan/Development/fpga/simple_hdmi/simple_hdmi.gen/sources_1/bd/simple_hdmi/simple_hdmi_ooc.xdc
+# XDC: /home/njordan/Development/fpga/pynq_z2_hdmi_demo/pynq_z2_hdmi_demo.gen/sources_1/bd/simple_hdmi/simple_hdmi_ooc.xdc
