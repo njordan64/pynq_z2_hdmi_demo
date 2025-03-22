@@ -1,0 +1,56 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-165,-880",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 2120 -y -640 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 2120 -y -610 -defaultsOSRD
+preplace port port-id_hdmi_out_clk_p -pg 1 -lvl 4 -x 2120 -y -170 -defaultsOSRD
+preplace port port-id_hdmi_out_clk_n -pg 1 -lvl 4 -x 2120 -y -140 -defaultsOSRD
+preplace portBus hdmi_out_data_p -pg 1 -lvl 4 -x 2120 -y -230 -defaultsOSRD
+preplace portBus hdmi_out_data_n -pg 1 -lvl 4 -x 2120 -y -200 -defaultsOSRD
+preplace portBus leds_4bits_tri_o -pg 1 -lvl 4 -x 2120 -y -430 -defaultsOSRD
+preplace portBus btns_4bits_tri_i -pg 1 -lvl 0 -x 0 -y -340 -defaultsOSRD
+preplace portBus rgbleds_6bits_tri_o -pg 1 -lvl 4 -x 2120 -y -460 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 530 -y -490 -defaultsOSRD
+preplace inst hdmi_top_0 -pg 1 -lvl 3 -x 1860 -y -400 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 2 -x 1160 -y -390 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 1160 -y -700 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 530 -y -220 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 2 -x 1160 -y -100 -defaultsOSRD
+preplace netloc axi_intc_0_irq 1 0 3 320 -360 750J -200 1370
+preplace netloc axi_vdma_0_m_axis_mm2s_tdata 1 2 1 1370 -460n
+preplace netloc axi_vdma_0_m_axis_mm2s_tkeep 1 2 1 1380 -440n
+preplace netloc axi_vdma_0_m_axis_mm2s_tlast 1 2 1 1390 -420n
+preplace netloc axi_vdma_0_m_axis_mm2s_tuser 1 2 1 1400 -400n
+preplace netloc axi_vdma_0_m_axis_mm2s_tvalid 1 2 1 1420 -380n
+preplace netloc axi_vdma_0_mm2s_introut 1 1 2 960 -210 1360
+preplace netloc btns_4bits_tri_i_1 1 0 3 N -340 760J -240 1440J
+preplace netloc hdmi_top_0_clk_pixel 1 0 4 320 -600 920 -220 NJ -220 2050
+preplace netloc hdmi_top_0_hdmi_out_clk_n 1 3 1 2060 -340n
+preplace netloc hdmi_top_0_hdmi_out_clk_p 1 3 1 2070 -360n
+preplace netloc hdmi_top_0_hdmi_out_data_n 1 3 1 2080 -380n
+preplace netloc hdmi_top_0_hdmi_out_data_p 1 3 1 2090 -400n
+preplace netloc hdmi_top_0_leds_4bits_tri_o 1 3 1 2050 -440n
+preplace netloc hdmi_top_0_rgbleds_6bits_tri_o 1 3 1 N -460
+preplace netloc hdmi_top_0_vid_tready 1 2 1 1410 -380n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 320 -320 770 -230 1430
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 310 -350 740
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 1 940 -670n
+preplace netloc axi_smc_M00_AXI 1 1 2 960 -570 1380J
+preplace netloc axi_smc_M01_AXI 1 0 3 310 -610 NJ -610 1360
+preplace netloc axi_smc_M02_AXI 1 1 2 950 -590 1370
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 1 2 960 -580 1360
+preplace netloc processing_system7_0_DDR 1 1 3 NJ -540 1390 -640 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 930J -600 N -600 2050
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 740J -730n
+levelinfo -pg 1 0 530 1160 1860 2120
+pagesize -pg 1 -db -bbox -sgen -210 -1100 2350 200
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_ps7_cnt":"1"
+}
